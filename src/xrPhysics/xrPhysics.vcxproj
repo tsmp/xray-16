@@ -30,9 +30,6 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\xrServerEntities\PHNetState.cpp">
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-    </ClCompile>
     <ClCompile Include="ActorCameraCollision.cpp" />
     <ClCompile Include="collisiondamagereceiver.cpp" />
     <ClCompile Include="console_vars.cpp" />
@@ -98,7 +95,6 @@
     <ClCompile Include="xrPhysics.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\xrServerEntities\PHNetState.h" />
     <ClInclude Include="ActorCameraCollision.h" />
     <ClInclude Include="BlockAllocator.h" />
     <ClInclude Include="CalculateTriangle.h" />

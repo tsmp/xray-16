@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="..\xray_project_configurations.props" />
+  </ImportGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6ace03f1-5082-40ac-bfb5-d54289558a72}</ProjectGuid>
+    <RootNamespace>xrServerEntities</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="..\xray_project_configuration.props" />
+  </ImportGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\xray.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>XRSERVERENTITIES_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="ai_sounds.h" />
+    <ClInclude Include="alife_human_brain.h" />
+    <ClInclude Include="alife_human_brain_inline.h" />
+    <ClInclude Include="alife_monster_brain.h" />
+    <ClInclude Include="alife_monster_brain_inline.h" />
+    <ClInclude Include="alife_movement_manager_holder.h" />
+    <ClInclude Include="alife_space.h" />
+    <ClInclude Include="character_info.h" />
+    <ClInclude Include="character_info_defs.h" />
+    <ClInclude Include="clsid_game.h" />
+    <ClInclude Include="gametype_chooser.h" />
+    <ClInclude Include="game_base_space.h" />
+    <ClInclude Include="InfoPortionDefs.h" />
+    <ClInclude Include="inventory_space.h" />
+    <ClInclude Include="ItemListTypes.h" />
+    <ClInclude Include="object_factory.h" />
+    <ClInclude Include="object_factory_impl.h" />
+    <ClInclude Include="object_factory_inline.h" />
+    <ClInclude Include="object_factory_space.h" />
+    <ClInclude Include="object_item_abstract.h" />
+    <ClInclude Include="object_item_abstract_inline.h" />
+    <ClInclude Include="object_item_client_server.h" />
+    <ClInclude Include="object_item_client_server_inline.h" />
+    <ClInclude Include="object_item_script.h" />
+    <ClInclude Include="object_item_single.h" />
+    <ClInclude Include="object_item_single_inline.h" />
+    <ClInclude Include="pch_script.h" />
+    <ClInclude Include="PHNetState.h" />
+    <ClInclude Include="PHSynchronize.h" />
+    <ClInclude Include="PropertiesListHelper.h" />
+    <ClInclude Include="PropertiesListTypes.h" />
+    <ClInclude Include="restriction_space.h" />
+    <ClInclude Include="script_ini_file.h" />
+    <ClInclude Include="script_rtoken_list.h" />
+    <ClInclude Include="script_rtoken_list_inline.h" />
+    <ClInclude Include="script_token_list.h" />
+    <ClInclude Include="script_value_container.h" />
+    <ClInclude Include="script_value_container_impl.h" />
+    <ClInclude Include="ShapeData.h" />
+    <ClInclude Include="shared_data.h" />
+    <ClInclude Include="smart_cast.h" />
+    <ClInclude Include="smart_cast_impl0.h" />
+    <ClInclude Include="smart_cast_impl1.h" />
+    <ClInclude Include="smart_cast_impl2.h" />
+    <ClInclude Include="specific_character.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="xml_str_id_loader.h" />
+    <ClInclude Include="xrEProps.h" />
+    <ClInclude Include="xrMessages.h" />
+    <ClInclude Include="xrServerEntities.hpp" />
+    <ClInclude Include="xrServer_Objects.h" />
+    <ClInclude Include="xrServer_Objects_Abstract.h" />
+    <ClInclude Include="xrServer_Objects_ALife.h" />
+    <ClInclude Include="xrServer_Objects_ALife_All.h" />
+    <ClInclude Include="xrServer_Objects_ALife_Items.h" />
+    <ClInclude Include="xrServer_Objects_ALife_Monsters.h" />
+    <ClInclude Include="xrServer_Objects_Alife_Smartcovers.h" />
+    <ClInclude Include="xrServer_Object_Base.h" />
+    <ClInclude Include="xrServer_script_macroses.h" />
+    <ClInclude Include="xrServer_Space.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="alife_human_brain.cpp" />
+    <ClCompile Include="alife_monster_brain.cpp" />
+    <ClCompile Include="alife_space.cpp" />
+    <ClCompile Include="character_info.cpp" />
+    <ClCompile Include="gametype_chooser.cpp" />
+    <ClCompile Include="object_factory.cpp" />
+    <ClCompile Include="object_factory_register.cpp" />
+    <ClCompile Include="object_factory_script.cpp" />
+    <ClCompile Include="object_item_script.cpp" />
+    <ClCompile Include="pch_script.cpp" />
+    <ClCompile Include="PHNetState.cpp" />
+    <ClCompile Include="script_fcolor_script.cpp" />
+    <ClCompile Include="script_flags_script.cpp" />
+    <ClCompile Include="script_fmatrix_script.cpp" />
+    <ClCompile Include="script_fvector_script.cpp" />
+    <ClCompile Include="script_ini_file.cpp" />
+    <ClCompile Include="script_ini_file_script.cpp" />
+    <ClCompile Include="script_net_packet_script.cpp" />
+    <ClCompile Include="script_reader_script.cpp" />
+    <ClCompile Include="script_rtoken_list_script.cpp" />
+    <ClCompile Include="script_sound_type_script.cpp" />
+    <ClCompile Include="script_token_list.cpp" />
+    <ClCompile Include="script_token_list_script.cpp" />
+    <ClCompile Include="smart_cast.cpp" />
+    <ClCompile Include="smart_cast_stats.cpp" />
+    <ClCompile Include="specific_character.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Mixed|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release Master Gold|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Mixed|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release Master Gold|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="xrServer_Factory.cpp" />
+    <ClCompile Include="xrServer_Objects.cpp" />
+    <ClCompile Include="xrServer_Objects_Abstract.cpp" />
+    <ClCompile Include="xrServer_Objects_ALife.cpp" />
+    <ClCompile Include="xrServer_Objects_ALife_Items.cpp" />
+    <ClCompile Include="xrServer_Objects_ALife_Items_script.cpp" />
+    <ClCompile Include="xrServer_Objects_ALife_Items_script2.cpp" />
+    <ClCompile Include="xrServer_Objects_ALife_Items_script3.cpp" />
+    <ClCompile Include="xrServer_Objects_ALife_Monsters.cpp" />
+    <ClCompile Include="xrServer_Objects_ALife_Monsters_script.cpp" />
+    <ClCompile Include="xrServer_Objects_ALife_Monsters_script2.cpp" />
+    <ClCompile Include="xrServer_Objects_ALife_Monsters_script3.cpp" />
+    <ClCompile Include="xrServer_Objects_ALife_Monsters_script4.cpp" />
+    <ClCompile Include="xrServer_Objects_ALife_script.cpp" />
+    <ClCompile Include="xrServer_Objects_ALife_script2.cpp" />
+    <ClCompile Include="xrServer_Objects_ALife_script3.cpp" />
+    <ClCompile Include="xrServer_Objects_Alife_Smartcovers.cpp" />
+    <ClCompile Include="xrServer_Objects_Alife_Smartcovers_script.cpp" />
+    <ClCompile Include="xrServer_Objects_script.cpp" />
+    <ClCompile Include="xrServer_Objects_script2.cpp" />
+    <ClCompile Include="xrServer_Object_Base.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="..\OpenXRay.natvis" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -16,12 +16,6 @@
     <Filter Include="ALife\Merge">
       <UniqueIdentifier>{8000df4c-fadf-45cc-8460-b0d11e11e7bf}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ALife\Shared">
-      <UniqueIdentifier>{e75d6553-69f1-4700-b0cf-72e8e5898ad0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ALife\Shared\Common">
-      <UniqueIdentifier>{9f4c9b4e-64b7-478f-9b0b-82b9ee2006f4}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ALife\Spawn">
       <UniqueIdentifier>{1f70db45-e478-4193-b9da-dc45e7707537}</UniqueIdentifier>
     </Filter>
@@ -72,9 +66,6 @@
     <ClCompile Include="xr_graph_merge.cpp">
       <Filter>ALife\Merge</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\xrServerEntities\smart_cast.cpp">
-      <Filter>ALife\Shared\Common</Filter>
-    </ClCompile>
     <ClCompile Include="game_spawn_constructor.cpp">
       <Filter>ALife\Spawn\game_spawn_constructor</Filter>
     </ClCompile>
@@ -124,24 +115,6 @@
     </ClInclude>
     <ClInclude Include="xr_graph_merge.h">
       <Filter>ALife\Merge</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xrServerEntities\restriction_space.h">
-      <Filter>ALife\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xrServerEntities\clsid_game.h">
-      <Filter>ALife\Shared\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xrServerEntities\smart_cast.h">
-      <Filter>ALife\Shared\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xrServerEntities\smart_cast_impl0.h">
-      <Filter>ALife\Shared\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xrServerEntities\smart_cast_impl1.h">
-      <Filter>ALife\Shared\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\xrServerEntities\smart_cast_impl2.h">
-      <Filter>ALife\Shared\Common</Filter>
     </ClInclude>
     <ClInclude Include="spawn_constructor_space.h">
       <Filter>ALife\Spawn</Filter>

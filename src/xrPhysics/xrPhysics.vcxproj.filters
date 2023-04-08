@@ -55,9 +55,6 @@
     <Filter Include="physics\Base\Objects\BodyEffectors">
       <UniqueIdentifier>{8fe36662-664e-4530-a4f0-03f99cdcab6e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="physics\Base\Objects\PHNet">
-      <UniqueIdentifier>{aa66b56a-4fa5-4645-b4ae-c763ed6271ab}</UniqueIdentifier>
-    </Filter>
     <Filter Include="physics\Base\Objects\MoveStorage">
       <UniqueIdentifier>{203e8fee-fc5a-43a4-b695-cf55b4d78677}</UniqueIdentifier>
     </Filter>
@@ -200,9 +197,6 @@
     </ClCompile>
     <ClCompile Include="PHContactBodyEffector.cpp">
       <Filter>physics\Base\Objects\BodyEffectors</Filter>
-    </ClCompile>
-    <ClCompile Include="..\xrServerEntities\PHNetState.cpp">
-      <Filter>physics\Base\Objects\PHNet</Filter>
     </ClCompile>
     <ClCompile Include="PHMoveStorage.cpp">
       <Filter>physics\Base\Objects\MoveStorage</Filter>
@@ -436,9 +430,6 @@
     </ClInclude>
     <ClInclude Include="PHContactBodyEffector.h">
       <Filter>physics\Base\Objects\BodyEffectors</Filter>
-    </ClInclude>
-    <ClInclude Include="..\xrServerEntities\PHNetState.h">
-      <Filter>physics\Base\Objects\PHNet</Filter>
     </ClInclude>
     <ClInclude Include="PHMoveStorage.h">
       <Filter>physics\Base\Objects\MoveStorage</Filter>
